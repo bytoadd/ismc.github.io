@@ -1,0 +1,50 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.b{
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 2rem rgb(112, 112, 112);
+}
+
+.c{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 4rem;
+    right: 0;  
+    left: -4rem;
+    bottom: 0;
+    background-color: rgb(255, 79, 79);
+    z-index: -1;
+    transition: 0.5s ease-out ;
+} 
+
+h2{
+    font-size: 500%;
+    display: inline;
+    background: linear-gradient(to left, rgb(94, 255, 108), rgb(125, 45, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.b:hover .c{
+    width: 150%;
+}
+
